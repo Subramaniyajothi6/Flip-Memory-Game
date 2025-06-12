@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    background-color: #6a1b9a;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #6a1b9a;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.card {
+    perspective: 1000px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+
+.card-front {
+    background-color: #d1c4e9;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* ----------------------------------------------------MediaQuery-------------------------------------------------- */
+
+/* screen < 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .game {
+        gap: 8px;
+        max-width: 350px;
+        margin: 2rem auto;
+    }
+}
+
+/* screen 481 - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        
+        perspective: 1000px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .game {
+        gap: 20px 0px;
+        max-width: 600px;
+        margin: 4rem auto;
+    }
+}
+
+/* screen 768px - 1024px */
+@media (min-width:768px) and (max-width: 1024px) {
+    .game {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    
+}
+
+/* screen > 1025px */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .game {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
