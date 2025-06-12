@@ -33,7 +33,7 @@ This game challenges the player’s memory skills by presenting a 4x4 grid of co
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/your-username/memory-game.git
+   git clone https://github.com/Subramaniyajothi6/memory-game.git
    cd memory-game
    ```
 
@@ -45,8 +45,7 @@ This game challenges the player’s memory skills by presenting a 4x4 grid of co
 ## 🌐 Live Demo
 
 Visit the deployed version here:  
-**[https://your-game.netlify.app](https://your-game.netlify.app)**  
-> _(Replace the above link with your actual Netlify URL)_
+**[https://flip-memorygame.netlify.app/](https://flip-memorygame.netlify.app/)**
 
 ---
 
@@ -84,9 +83,8 @@ memory-game/
 
 ## 🧠 Author
 
-**Your Name**  
-[GitHub Profile](https://github.com/your-username)  
-[Portfolio or LinkedIn (Optional)]
+**subramaniyajothi**  
+[GitHub Profile](https://github.com/Subramaniyajothi6)
 
 ---
 
