@@ -74,8 +74,6 @@ memory-game/
 
 ## 📄 Terms and Conditions
 
-- Do **not** mention the company's name in the code.
-- Do **not** share this assignment document.
 - This project is for **assessment purposes** only.
 - You are encouraged to **open-source** the project.
 
